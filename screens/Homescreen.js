@@ -1,16 +1,27 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 
 export default function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
+
+        {/* Logo */}
+        <Image 
+            source={require('../assets/SafeLens-logo.png')} 
+            style={styles.logo} 
+            resizeMode="contain"
+        />
+
+        {/* App Description */}
+        <Text style={styles.description}>
+            Your AI-powered camera assistant for detecting potential hazards in real time.
+        </Text>
+
       <Text style={styles.title}>SafeLens Camera</Text>
       
       <TouchableOpacity 
         style={styles.button}
-        onPress={() => navigation.navigate('Camera')}
-       
-    
+        onPress={() => navigation.navigate('Camera')}    
       >
         <Text style={styles.buttonText}>Open Camera</Text>
       </TouchableOpacity>
@@ -57,5 +68,21 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 18,
     fontWeight: '600'
-  }
+  },
+
+  logo: {
+  width: 300,
+  height: 300,
+  marginBottom: 10,
+  borderRadius: 60,
+},
+
+description: {
+  fontSize: 14,
+  textAlign: 'center',
+  color: '#555',
+  marginBottom: 10,
+  paddingHorizontal: 20,
+},
+
 });

@@ -1,13 +1,12 @@
 {
   "expo": {
-    "name": "safelens-camera",
-    "slug": "safelens-camera",
+    "description": "A camera app that helps you take safe and secure photos.",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/SafeLens-logo.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/SafeLens-logo.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -20,14 +19,14 @@
     "android": {
       "permissions": ["CAMERA"],
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/SafeLens-logo.png",
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
       "newArchEnabled": true
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/SafeLens-logo.png"
     }
   }
 }
