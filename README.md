@@ -84,8 +84,8 @@ A fully functional mobile app that can detect sharp or dangerous tools, assign a
 
 * Expand object database with custom training
 * Deploy LLM model directly on mobile
-* Add gamified child safety mode
+
 
 ---
 
-Let me know if you want this in DOC/PDF format, or help starting the code or backend integration.
+
